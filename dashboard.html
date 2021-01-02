@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./jquery.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./jqstyles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <title>Dashboard</title>
+    <style>
+        form{
+            margin: 50px 10px;
+        }
+        h1{
+            background-color: black;
+            color : white;
+            padding: 20px
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">Dashboard</h1>
+    <button id="addBtn" class="btn btn-primary float-right m-4">Add Product</button>
+    <form>
+        
+        <div class="form-group">
+          <label for=title>Product Title</label>
+          <input type="text" class="form-control" id=title  placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input type="text" class="form-control" id="category" placeholder="Category">
+        </div>
+        <div class="form-group">
+            <label for=price>Product Price</label>
+            <input type="text" class="form-control" id=price  placeholder="Price">
+        </div>
+        <div class="form-group">
+            <label for="details">Details</label>
+            <input type="text" class="form-control" id="details" placeholder="Details">
+        </div>
+        
+        <input id="img" type="file" class="btn btn-primary" /> 
+        
+      </form>
+</body>
+</html>
