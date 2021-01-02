@@ -31,13 +31,9 @@ $(document).ready(function(){
     }
     
     var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
-    var msg = "";
-    if (ratingValue > 1) {
-        msg = "Thanks! You rated this " + ratingValue + " stars.";
-    }
-    else {
-        msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
-    }
+    var msg = "You rated this " + ratingValue + " stars.";
+
+    
     responseMessage(msg);
     
   });
@@ -94,7 +90,7 @@ function addProducts() {
   var img = $("#img").val();
   img = handleImageSelect(img)
   $.ajax({
-    url: "localhost:5000/api/products",
+    url: "https://git.heroku.com/secure-atoll-13321/api/products",
     method: "POST",
     data: { title, category, price, details, img },
     success: function(response) {
@@ -112,7 +108,7 @@ function addProducts() {
 
 function loadProducts() {
   $.ajax({
-    url: "localhost:5000/api/products",
+    url: "https://git.heroku.com/secure-atoll-13321/api/products",
     method: "GET",
     error: function(response) {
       console.log(response)
